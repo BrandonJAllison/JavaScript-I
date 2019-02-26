@@ -71,11 +71,13 @@ for (let i = 0; i < inventory.length; i++) {
 
     if (inventory[i].id === (33)) {
 
-        newCar.push(inventory[i].car_year,inventory[i].car_make,inventory[i].car_model);
+        //newCar.push(inventory[i].car_year,inventory[i].car_make,inventory[i].car_model);
+        newCar.push(inventory[i])
     }
 }
-  
-console.log("Car 33 is a " + newCar);
+
+console.log(`Car ${newCar[0].id} is a ${newCar[0].car_year} ${newCar[0].car_make} ${newCar[0].car_model}`);
+
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
